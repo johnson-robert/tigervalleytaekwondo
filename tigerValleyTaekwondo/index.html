@@ -1,64 +1,57 @@
-<?php
+<!DOCTYPE html>
 
-//controler marlenajohnson
-//require_once (__DIR__) . '/library/connections.php';
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Rob Johnson, Mike Mar, Orin Grayll , Alex Hargrove">
+        <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/medium.css" rel="stylesheet">
+        <link href="styles/large.css" rel="stylesheet">
+        <link href="images/whispytree.ico" type="image/x-icon" rel="shortcut icon">
+        <title>Tiger Valley Taekwondo</title>
+    </head>
 
-//traffic controller
-$action = filter_input(INPUT_POST, 'action');
-if ($action == NULL) {
-  $action = filter_input(INPUT_GET, 'action');
-  if ($action == NULL)
-  {
-    $action = 'home';
-  }
-}
+    <body>
+        <header>
+            <h1 id="headerhome">Tiger Valley Taekwondo</h1>
+        </header>
+        <nav id="navbar">
+            <ul id="mainmenu" class="navigation">
+                <li><a class="way" href="./index.php?action=home">
+                        Home</a></li>
+                <li><a class="way" href="#">
+                        Philosophy</a></li>
+                <li><a class="way" href="#">
+                        Background</a></li>
+                <li><a class="way" href="#">
+                        Contact</a></li>
+                <li><a id="dropdown" class="navigation" 
+                       onclick="moreNavigation()">More</a></li>
+            </ul>
+        </nav>
+        <main id="homemain" class="mainbackgroundimage">
+            <div>        
+                <ul id="morenav" class="navigation">
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Fees</a></li>
+                    <li><a href="#">Calendar</a></li>
+                </ul>
+            </div>
+            <h2>Tiger Valley Taekwondo Presents</h2>
+            <h3>The First Annual Community</h3>
+            <h3>Martial Arts Tournament</h3>
+            <img src = "images/April Tournament Flyer.png" 
+                 alt="Tournament Flyer">
+        </main>
+        <footer>
+              <p>Presented by Robert Goodspeed 0013 &copy;2019</p>          
 
-//default title
-$title = 'Home';
-
-//test action
-//echo $action;
-
-//goto page
-switch ($action) {
-    case 'home':
-      $title = 'Home';
-      include (__DIR__) . '/view/home.php';
-      break;
-    case 'philosophy':
-      $title = 'Philosophy';
-      include (__DIR__) . '/view/philosophy.php';
-      break;
-    case 'background':
-      $title = 'Background';
-      include (__DIR__) . '/view/background.php';
-      break;
-    case 'contact':
-      $title = 'Home';
-      include (__DIR__) . '/view/contact.php';
-      break;
-     case 'map':
-      $title = 'Map';
-      include (__DIR__) . '/view/map.php';
-      break;
-    case 'forms':
-      $title = 'Forms';
-      include (__DIR__) . '/view/forms.php';
-      break;
-    case 'fees':
-      $title = 'Fees';
-      include (__DIR__) . '/view/fees.php';
-      break;
-    case 'calendar':
-      $title = 'Calendar';
-      include (__DIR__) . '/view/calendar.php';
-      break;
-    case 'error':
-      $title = 'Error';
-      include (__DIR__) . '/view/error500.php';
-      break;
-    default:
-      $title = 'Default';
-      include (__DIR__) . '/view/home.php';
-      break;
-}
+            <?php include 'common/footer.php'; ?>
+        </footer>
+        <script src="scripts/morenavigation.js"></script>
+        <script src="scripts/stickynavigation.js"></script>
+        <script src="scripts/wayfinding.js"></script>
+    </body>
+</html>
