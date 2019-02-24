@@ -6,11 +6,12 @@
         <?php include 'common/nav.php'; ?>
         <main id="homemain" class="mainbackgroundimage">
             <?php include 'common/navmore.php'; ?>
-            <h2>Tiger Valley Taekwondo Presents : </h2>
-            <h3>The First Annual Community</h3>
-            <h3>Martial Arts Tournament</h3>
-            <img src = "images/April Tournament Flyer.png" 
-                 alt="Tournament Flier">
+            <h2>Marlena Johnson, LCSW</h2>
+            <h3>"Discovering the truth about</h3>
+            <h3>ourselves is a lifetime's</h3>
+            <h3>work, but it's worth</h3>
+            <h3>the effort".</h3><br>
+            <h3>-Fred Rogers</h3>
         </main>
         <footer>
             <?php include 'common/footer.php'; ?>
