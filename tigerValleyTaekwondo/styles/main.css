@@ -1,0 +1,316 @@
+/*small view*/
+
+/* body css *******************************************************************/
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* header css *****************************************************************/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+/* nav css ********************************************************************/
+
+#mainmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 0 1% 0;
+    margin: 0;
+    overflow: hidden;
+}
+#morenav {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    min-width: 17%;
+    text-align: center;
+    border-radius: 0 0 0 6%;
+
+    animation-name: example;
+    animation-duration: .5s;
+}
+@keyframes example {
+    0% {top: 0;}
+    100% {top: 10%;}
+}
+#morenav li {
+    padding: 10% 0;
+}
+.navigation {
+    background-color: #ff0000;
+    list-style: none;
+}
+.navigation li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navigation li a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+/* from wayfinding script */
+.active {
+    color: #222;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 1%;
+}
+
+/* main css *******************************************************************/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+.mainbackgroundimage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25rem;  
+}
+
+/* main home css **************************************************************/
+
+#homemain {
+    /*background-image: url("../images/bonsai-small.jpeg");*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#homemain img {
+        max-width: 100%;
+        
+}        
+#homemain h2 {
+    text-align: left;
+    margin: 0;
+    padding: 4% 0 0 4%;
+    color: #000000;
+    text-shadow: 1px 1px #737373;
+}
+#homemain h3 {
+    text-align: left;
+    margin: 0;
+    padding: 2% 0 0 4%;
+    color: #000000;
+}
+
+/* main philosophy css ********************************************************/
+
+#philosophymain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#philosophymain img {
+    max-height: 14rem;
+}
+#philosophymain div {
+    background-color: #e6e6e6;
+    padding: 4%;
+}
+#philosophymain div h3 {
+    text-align: left;
+    margin: 0;
+    padding: 4% 0 0 0;
+    color: #000000;
+    text-shadow: 1px 1px #737373;
+}
+#philosophymain p {
+    text-align: left;
+    margin: 0;
+    padding: 2% 2% 0 0;
+    color: #000000;
+}
+
+/* main background css ********************************************************/
+
+#backgroundmain {
+    background-image: url("../images/masaaki-komori-small.jpg");
+}
+#backgroundmain div {
+    padding: 0 0 4% 0;
+}
+#backgroundmain h3, h4 {
+    text-align: left;
+    margin: 0;
+    padding: 4% 0 0 4%;
+    color: #000;
+}
+#backgroundmain h3 {
+    text-shadow: 1px 1px #737373;
+}
+#backgroundmain p {
+    text-align: left;
+    margin: 0;
+    padding: 2% 0 0 4%;
+    color: #000;
+}
+
+/* main fees css **************************************************************/
+
+#feesmain {
+    background-image: url("../images/valentina-yoga-small.jpg");
+    color: #000000;
+    text-align: left;
+    padding: 0 0 0 4%;
+}
+feesmain h2 {
+    text-shadow: 1px 1px #737373;
+}
+/* main form css **************************************************************/
+
+#formsmain {
+    background-image: url("../images/snail-small.jpeg");
+}
+#formsmain h3 {
+    text-align: left;
+    margin: 0;
+    padding: 4% 4% 0 4%;
+    color: #000000;
+    text-shadow: 1px 1px #737373;
+}
+#formsmain a {
+    text-align: left;
+    margin: 0;
+    padding: 2% 4% 0 4%;
+    color: #000000;
+    width: 175px;
+}
+#formsmain a:hover {
+    color: #009999;
+}
+
+/* main contact css ***********************************************************/
+
+#contactmain {
+    background-image: url("../images/background-cactus-small.jpeg");
+}
+
+#contactmain h3 {
+    text-align: left;
+    margin: 0;
+    padding: 4% 0 0 4%;
+    color: #000000;
+    text-shadow: 1px 1px #737373;
+}
+#contactmain p {
+    text-align: left;
+    margin: 0;
+    padding: 2% 0 0 4%;
+    color: #000000;
+}
+
+/* main map css ***************************************************************/
+
+#mapmain {
+    background-image: url("../images/wood-yellow-small.jpeg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map {
+    max-width: 90%;
+    padding: 10% 0 10% 0;
+}
+
+/* calendar css ***************************************************************/
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* footer css *****************************************************************/
+
+footer {
+    display: flex;
+    background-color: #0099ff;
+    color: #ffffff;
+}
+footer p {
+    width: 100%;
+    text-align: center;
+    padding: 0 4% 0 0;
+}
